@@ -1,0 +1,136 @@
+.available-items-wrapper {
+  width: 60%;
+}
+.available-items-title {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.available-items-list {
+  width: 80%;
+  margin: 10px auto;
+  margin-right: 20%;
+  border-radius: 20px;
+  padding: 20px;
+  background: #ededed;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #bebebe;
+}
+
+.available-items-inner {
+  padding: 10px 0;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  min-height: 80px;
+  width: 100%;
+  table-layout: fixed;
+  position: relative;
+}
+.available-items-info-wrapper {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: auto;
+  text-align: left;
+}
+
+.available-items-img-wrapper {
+  padding: 0 0 0 100px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  min-height: 80px;
+  outline: none;
+  text-decoration: none;
+}
+
+.available-items-img-box {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.available-items-img-inner {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+.available-items-img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.available-items-info-box {
+  max-width: 100%;
+  width: 170px;
+  font-size: 14px;
+  color: #303033;
+  line-height: 1.57;
+  vertical-align: middle;
+  word-break: break-all;
+}
+
+.available-items-info-category {
+  font-size: 12px;
+  display: block;
+  font-weight: 700;
+}
+
+.available-items-info-name {
+  margin: 4px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  font-weight: 700;
+}
+
+.available-items-info-name-eng {
+  margin: 0;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+}
+.available-items-info-price {
+  margin-top: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.available-items-cart-btn-warpper {
+  max-width: 100%;
+  width: 80px;
+  margin: 0 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 80px;
+  padding-top: 20px;
+}
+.available-items-cart-btn-add {
+  text-align: center;
+  width: 80%;
+  padding: 5px;
+  border-radius: 16px;
+  background: #017143;
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

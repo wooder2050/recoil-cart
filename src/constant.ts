@@ -6,7 +6,7 @@ export const inventory = [
 ];
 
 export const destinations: destinationsModel = {
-  seoul: 25,
-  ilsan: 35,
-  jeju: 45,
+  seoul: 2500,
+  ilsan: 3500,
+  jeju: 4500,
 };

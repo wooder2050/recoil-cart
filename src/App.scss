@@ -1,0 +1,14 @@
+.wrapper {
+  width: 80%;
+  min-width: 760px;
+  margin: 20px auto;
+  border-radius: 50px;
+  background: #ffffff;
+  padding: 20px 50px;
+  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
+}
+
+.components-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

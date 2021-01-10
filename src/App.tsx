@@ -1,12 +1,18 @@
 import React from "react";
 import { RecoilRoot } from "recoil";
-import { AvailableItems, Cart } from "./components";
+import { Header, AvailableItems, Cart } from "./components";
+import "./App.scss";
 
 function App() {
   return (
     <RecoilRoot>
-      <AvailableItems />
-      <Cart />
+      <div className="wrapper">
+        <Header />
+        <div className="components-wrapper">
+          <AvailableItems />
+          <Cart />
+        </div>
+      </div>
     </RecoilRoot>
   );
 }

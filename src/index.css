@@ -6,8 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  background: #263238;
-  color: white;
+  color: #303030;
 }
 
 code {
@@ -15,35 +14,201 @@ code {
     monospace;
 }
 
-button {
-  background: none;
-  padding: 0.25rem 0.5rem;
-  display: inline-block;
-  margin: 0 0.25rem;
-  line-height: 1.25rem;
-  border: 1px solid #455a64;
-  border-radius: 0.25rem;
-  color: white;
-}
-
-#root {
-  display: flex;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0.5rem;
-}
-
-#root > div {
-  width: 50%;
-}
-
-ul {
+/* =====================================
+              CSS RESET
+===================================== */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul li {
   list-style: none;
 }
 
-li {
+a {
   margin: 0;
-  padding-bottom: 0.5rem;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* =====================================
+            GRID SYSTEM
+===================================== */
+
+[class*="col-"] {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* =====================================
+               Layout
+===================================== */
+.layout-center {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =====================================
+            Clear Utility
+===================================== */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* =====================================
+            Padding Utility
+===================================== */
+.pd-0 {
+  padding: 0;
 }

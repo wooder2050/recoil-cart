@@ -1,0 +1,44 @@
+.shipping-title {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.shipping-btn-wrapper {
+  width: 80%;
+  margin: 10px auto 20px auto;
+  margin-right: 20%;
+  border-radius: 20px;
+  padding: 20px;
+  background: #ededed;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #bebebe;
+}
+.shipping-btn-active {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+  background: #017143;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.shipping-btn {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #017143;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+}
