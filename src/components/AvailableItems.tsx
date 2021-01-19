@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { cartState, inventoryState } from "../atoms";
 
-import { inventoryData } from "../selector";
+// import { inventoryData } from "../selector";
 
 import { CartItemsModel, InventoryModel } from "../entity";
 import "./AvailableItems.scss";
@@ -13,7 +13,7 @@ export default function AvailableItems() {
     inventoryState
   );
 
-  const inventoryItems = useRecoilValue<InventoryModel[]>(inventoryData);
+  // const inventoryItems = useRecoilValue<InventoryModel[]>(inventoryData);
 
   const cartNames = cart.map((item) => item.name);
 
@@ -39,7 +39,7 @@ export default function AvailableItems() {
         {inventory.map(({ img, category, name, name_eng, price }, index) => (
           <div className="available-items-inner" key={index}>
             <div className="available-items-info-wrapper">
-              <p className="available-items-img-wrapper">
+              <div className="available-items-img-wrapper">
                 <div className="available-items-img-box">
                   <div className="available-items-img-inner">
                     <img
@@ -84,7 +84,7 @@ export default function AvailableItems() {
                     </div>
                   )}
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         ))}

@@ -39,8 +39,8 @@ export default function CartItems() {
   return (
     <ul className="cart-list">
       {cartTotalInfo.length > 0 &&
-        cartTotalInfo.map((cart) => (
-          <li className="cart">
+        cartTotalInfo.map((cart, index) => (
+          <li className="cart" key={cart.name + index}>
             {cart.name} @ {`${cart.price.toLocaleString()}원`} X {cart.count}
           </li>
         ))}
