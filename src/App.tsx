@@ -1,18 +1,20 @@
 import React from "react";
 import { RecoilRoot } from "recoil";
-import { Header, AvailableItems, Cart } from "./components";
+import { Header, AvailableItems, Cart, Loading } from "./components";
 import "./App.scss";
 
 function App() {
   return (
     <RecoilRoot>
-      <div className="wrapper">
-        <Header />
-        <div className="components-wrapper">
-          <AvailableItems />
-          <Cart />
+      <React.Suspense fallback={<Loading />}>
+        <div className="wrapper">
+          <Header />
+          <div className="components-wrapper">
+            <AvailableItems />
+            <Cart />
+          </div>
         </div>
-      </div>
+      </React.Suspense>
     </RecoilRoot>
   );
 }

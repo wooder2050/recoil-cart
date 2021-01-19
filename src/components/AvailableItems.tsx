@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { cartState, inventoryState } from "../atoms";
 
-// import { inventoryData } from "../selector";
+import { inventoryData } from "../selector";
 
 import { CartItemsModel, InventoryModel } from "../entity";
 import "./AvailableItems.scss";
@@ -13,7 +13,7 @@ export default function AvailableItems() {
     inventoryState
   );
 
-  // const inventoryItems = useRecoilValue<InventoryModel[]>(inventoryData);
+  const inventoryItems = useRecoilValue<InventoryModel[]>(inventoryData);
 
   const cartNames = cart.map((item) => item.name);
 
