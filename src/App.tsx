@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { RecoilRoot } from "recoil";
 import { Header, AvailableItems, Cart, Loading } from "./components";
 import "./App.scss";
@@ -6,7 +6,7 @@ import "./App.scss";
 function App() {
   return (
     <RecoilRoot>
-      <React.Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading />}>
         <div className="wrapper">
           <Header />
           <div className="components-wrapper">
@@ -14,7 +14,7 @@ function App() {
             <Cart />
           </div>
         </div>
-      </React.Suspense>
+      </Suspense>
     </RecoilRoot>
   );
 }
